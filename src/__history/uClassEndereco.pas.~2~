@@ -1,0 +1,11 @@
+unit uClassEndereco;
+
+interface
+
+type
+  TEndereco = class
+
+
+implementation
+
+end.

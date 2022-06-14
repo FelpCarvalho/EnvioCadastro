@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/26 14:27:16.000.913,=C:\Users\FELIPE\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/10 17:29:39.000.019,=C:\Users\FELIPE\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/10 17:33:56.000.940,E:\Projetos\CadastroCliente\uMain.pas=C:\Users\FELIPE\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/10 17:33:56.000.940,E:\Projetos\CadastroCliente\uMain.dfm=C:\Users\FELIPE\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/06/10 17:49:12.000.805,E:\Projetos\CadastroCliente\CadastroCliente.dproj=C:\Users\FELIPE\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/06/10 18:20:21.000.599,=E:\Projetos\CadastroCliente\Unit1.pas</Transaction>
+    <Transaction>2022/06/10 18:21:03.000.610,E:\Projetos\CadastroCliente\src\uClassEndereco.pas=E:\Projetos\CadastroCliente\Unit1.pas</Transaction>
+    <Transaction>2022/06/10 18:41:14.000.887,E:\Projetos\CadastroCliente\src\uMain.dfm=E:\Projetos\CadastroCliente\uMain.dfm</Transaction>
+    <Transaction>2022/06/10 18:41:14.000.887,E:\Projetos\CadastroCliente\src\uMain.pas=E:\Projetos\CadastroCliente\uMain.pas</Transaction>
+    <Transaction>2022/06/10 18:45:22.000.867,=E:\Projetos\CadastroCliente\Unit1.pas</Transaction>
+    <Transaction>2022/06/10 18:45:41.000.217,E:\Projetos\CadastroCliente\src\Class\uClassApi.pas=E:\Projetos\CadastroCliente\Unit1.pas</Transaction>
+    <Transaction>2022/06/10 19:44:49.000.078,=E:\Projetos\CadastroCliente\Unit1.pas</Transaction>
+    <Transaction>2022/06/10 19:44:59.000.252,E:\Projetos\CadastroCliente\Unit1.pas=E:\Projetos\CadastroCliente\src\Class\uClassEmail.pas</Transaction>
+    <Transaction>2022/06/10 19:45:06.000.533,E:\Projetos\CadastroCliente\src\uClassEndereco.pas=</Transaction>
+    <Transaction>2022/06/13 18:46:29.000.710,E:\Projetos\CadastroCliente\src\Class\uClassEmail.pas=</Transaction>
+    <Transaction>2022/06/13 21:31:16.000.717,=F:\Projetos\RAD\EnvioCadastro\src\uClassIniFile.pas</Transaction>
+    <Transaction>2022/06/13 21:31:17.000.035,=F:\Projetos\RAD\EnvioCadastro\src\uClassTable.pas</Transaction>
+    <Transaction>2022/06/13 21:31:17.000.107,=F:\Projetos\RAD\EnvioCadastro\src\uClassUtils.pas</Transaction>
+    <Transaction>2022/06/13 21:32:19.000.724,F:\Projetos\RAD\EnvioCadastro\src\uClassTable.pas=</Transaction>
+    <Transaction>2022/06/13 22:22:05.000.656,F:\Projetos\RAD\EnvioCadastro\src\uClassIniFile.pas=</Transaction>
+    <Transaction>2022/06/14 20:36:03.686,F:\Projetos\RAD\EnvioCadastro\src\Class\uClassUtils.pas=F:\Projetos\RAD\EnvioCadastro\src\uClassUtils.pas</Transaction>
+  </Transactions>
+</BorlandProject>

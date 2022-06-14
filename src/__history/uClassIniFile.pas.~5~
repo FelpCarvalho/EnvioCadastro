@@ -1,0 +1,184 @@
+unit uClassIniFile;
+
+interface
+
+uses
+  System.IniFiles,
+  System.SysUtils,
+  Vcl.Forms;
+
+type
+  TFile = class
+    private
+    FReadConfirmatio: string;
+    FCc: string;
+    FPort: string;
+    FPass: string;
+    FSsl: string;
+    FAssunt: string;
+    FMsgDefault: string;
+    FTls: string;
+    FHost: string;
+    FSender: string;
+    FUserName: string;
+    FEmpresa: string;
+    procedure SetEmpresa(const Value: string);
+
+    procedure SetAssunt(const Value: string);
+    procedure SetCc(const Value: string);
+    procedure SetHost(const Value: string);
+    procedure SetMsgDefault(const Value: string);
+    procedure SetPass(const Value: string);
+    procedure SetPort(const Value: string);
+    procedure SetReadConfirmatio(const Value: string);
+    procedure SetSender(const Value: string);
+    procedure SetSsl(const Value: string);
+    procedure SetTls(const Value: string);
+    procedure SetUserName(const Value: string);
+    public
+    property Empresa: string read FEmpresa write SetEmpresa;
+    property Sender: string read FSender write SetSender;
+    property Cc: string read FCc write SetCc;
+    property Host: string read FHost write SetHost;
+    property Port: string read FPort write SetPort;
+    property UserName : string read FUserName write SetUserName;
+    property Pass : string read FPass write SetPass;
+    property Ssl : string read FSsl write SetSsl;
+    property Tls : string read FTls write SetTls;
+    property ReadConfirmation : string read FReadConfirmatio write SetReadConfirmatio;
+    property MsgDefault : string read FMsgDefault write SetMsgDefault;
+    property Assunt : string read FAssunt write SetAssunt;
+    constructor Create;
+    class function New : TFIle;
+    class procedure CreateArq;
+    procedure Read;
+    procedure Write;
+    procedure CreatSection;
+    function EnDecryptString(StrValue: Ansistring; Chave: Word): String;
+
+  end;
+
+implementation
+
+
+{ TFile }
+
+
+
+constructor TFile.Create;
+begin
+end;
+
+class procedure TFile.CreateArq;
+var
+  vDir : string;
+  vConfig : TiniFile;
+begin
+  vDir  := ExtractFilePath(Application.ExeName) + ARQUIVO;
+  vDir :=  StringReplace(vDir,'\\','\',[rfReplaceAll]);
+
+  if FileExists(vDir) then
+    exit;
+  vConfig := TIniFile.Create(vDir);
+  try
+    vConfig.EraseSection(TAG);
+    vConfig.WriteString(TAG, 'DIR', '');
+    vConfig.WriteString(TAG, 'EMPRESA', '');
+    vConfig.WriteString(TAG, 'SENDER', '');
+    vConfig.WriteString(TAG, 'CC', '');
+    vConfig.WriteString(TAG, 'HOST', '');
+    vConfig.WriteString(TAG, 'PORT', '');
+    vConfig.WriteString(TAG, 'USERNAME', '');
+    vConfig.WriteString(TAG, 'PASS', '');
+    vConfig.WriteString(TAG, 'SSL', '');
+    vConfig.WriteString(TAG, 'TLS', '');
+    vConfig.WriteString(TAG, 'READCONFIRMATION', '');
+    vConfig.WriteString(TAG, 'MSGDEFAULT', '');
+    vConfig.WriteString(TAG, 'ASSUNT', '');
+    vConfig.WriteString(TAG, 'DIRSALE', '');
+    vConfig.WriteString(TAG, 'DIRCANC', '');
+  finally
+    vConfig.Free;
+  end;
+
+
+end;
+
+
+
+class function TFile.New: TFIle;
+begin
+ result := TFile.Create;
+end;
+
+
+procedure TFile.SetAssunt(const Value: string);
+begin
+  FAssunt := Value;
+end;
+
+procedure TFile.SetCc(const Value: string);
+begin
+  FCc := Value;
+end;
+
+procedure TFile.SetEmpresa(const Value: string);
+begin
+  FEmpresa := Value;
+end;
+
+procedure TFile.SetHost(const Value: string);
+begin
+  FHost := Value;
+end;
+
+procedure TFile.SetMsgDefault(const Value: string);
+begin
+  FMsgDefault := Value;
+end;
+
+procedure TFile.SetPass(const Value: string);
+begin
+  FPass := Value;
+end;
+
+procedure TFile.SetPort(const Value: string);
+begin
+  FPort := Value;
+end;
+
+procedure TFile.SetReadConfirmatio(const Value: string);
+begin
+  FReadConfirmatio := Value;
+end;
+
+procedure TFile.SetSender(const Value: string);
+begin
+  FSender := Value;
+end;
+
+procedure TFile.SetSsl(const Value: string);
+begin
+  FSsl := Value;
+end;
+
+procedure TFile.SetTls(const Value: string);
+begin
+  FTls := Value;
+end;
+
+procedure TFile.SetUserName(const Value: string);
+begin
+  FUserName := Value;
+end;
+
+
+
+initialization
+  TFile.CreateArq;
+
+
+finalization
+
+
+end.
